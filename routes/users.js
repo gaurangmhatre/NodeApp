@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET users listing. */
 router.get('/literacyPer', function(req, res, next) {
-    res.setHeader('Access-Control-Allow-Origin', *);
+    res.setHeader('Access-Control-Allow-Origin', '*');
     res.json([{
       "name":"Overall Literacy %",
       "data":[
@@ -42,7 +42,7 @@ router.get('/literacyPer', function(req, res, next) {
 
 /* GET users listing. */
 router.get('/literacyByState', function(req, res, next) {    
-    res.setHeader('Access-Control-Allow-Origin', *);
+    res.setHeader('Access-Control-Allow-Origin', '*');
     res.json([{
     "data": [
       { "x": 222, "y": 68, "z": 12, "name": "JK", "State": "JAMMU & KASHMIR" },
@@ -87,7 +87,7 @@ router.get('/literacyByState', function(req, res, next) {
 
 /* GET users listing. */
 router.get('/literacyMen1', function(req, res, next) {    
-    res.setHeader('Access-Control-Allow-Origin', *);
+    res.setHeader('Access-Control-Allow-Origin', '*');
     res.json([
     {
       "name": "Browsers",
@@ -130,7 +130,7 @@ router.get('/literacyMen1', function(req, res, next) {
 
 /* GET users listing. */
 router.get('/literacyMen2', function(req, res, next) {    
-    res.setHeader('Access-Control-Allow-Origin', *);
+    res.setHeader('Access-Control-Allow-Origin', '*');
     res.json([ 
          { 
             "name":"Jammu & Kashmir",
@@ -444,7 +444,7 @@ router.get('/literacyMen2', function(req, res, next) {
 
 /* GET users listing. */
 router.get('/literacyWomen', function(req, res, next) {    
-    res.setHeader('Access-Control-Allow-Origin', *);
+    res.setHeader('Access-Control-Allow-Origin', '*');
     res.json([ 
    { 
       "name":"Browsers",
@@ -487,7 +487,7 @@ router.get('/literacyWomen', function(req, res, next) {
 
 /* GET users listing. */
 router.get('/literacyWomen2', function(req, res, next) {    
-    res.setHeader('Access-Control-Allow-Origin', *);
+    res.setHeader('Access-Control-Allow-Origin', '*');
     res.json( [
       {
         "name": "Jammu & Kashmir",
