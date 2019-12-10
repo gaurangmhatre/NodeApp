@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET users listing. */
 router.get('/literacyPer', function(req, res, next) {
-    res.setHeader('Access-Control-Allow-Origin', 'http://localhost:55790');
+    res.setHeader('Access-Control-Allow-Origin', *);
     res.json([{
       "name":"Overall Literacy %",
       "data":[
@@ -42,7 +42,7 @@ router.get('/literacyPer', function(req, res, next) {
 
 /* GET users listing. */
 router.get('/literacyByState', function(req, res, next) {    
-    res.setHeader('Access-Control-Allow-Origin', 'http://localhost:55790');
+    res.setHeader('Access-Control-Allow-Origin', *);
     res.json([{
     "data": [
       { "x": 222, "y": 68, "z": 12, "name": "JK", "State": "JAMMU & KASHMIR" },
@@ -83,6 +83,766 @@ router.get('/literacyByState', function(req, res, next) {
       { "x": 114, "y": 66, "z": 0.3, "name": "TE", "State": "TELANGANA" }
     ]
   }])
+});
+
+/* GET users listing. */
+router.get('/literacyMen1', function(req, res, next) {    
+    res.setHeader('Access-Control-Allow-Origin', *);
+    res.json([
+    {
+      "name": "Browsers",
+      "colorByPoint": true,
+      "data": [
+        {
+          "name": "Jammu & Kashmir",
+          "y": 77.37,
+          "drilldown": "Jammu & Kashmir"
+        },
+        {
+          "name": "Uttar Pradesh",
+          "y": 79.69,
+          "drilldown": "Uttar Pradesh"
+        },
+        {
+          "name": "Kerala",
+          "y": 95.86,
+          "drilldown": "Kerala"
+        },
+        {
+          "name": "Delhi",
+          "y": 91.03,
+          "drilldown": "Delhi"
+        },
+        {
+          "name": "Maharashtra",
+          "y": 88.89,
+          "drilldown": "Maharashtra"
+        },
+        {
+          "name": "Bihar",
+          "y": 73.44,
+          "drilldown": "Bihar"
+        }
+      ]
+    }
+  ])
+ });
+
+/* GET users listing. */
+router.get('/literacyMen2', function(req, res, next) {    
+    res.setHeader('Access-Control-Allow-Origin', *);
+    res.json([ 
+         { 
+            "name":"Jammu & Kashmir",
+            "id":"Jammu & Kashmir",
+            "data":[ 
+               [ 
+                  "KUPWARA",
+                  77
+               ],
+               [ 
+                  "BARAMULA",
+                  77.35
+               ],
+               [ 
+                  "SRINAGAR",
+                  77.95
+               ],
+               [ 
+                  "BADGAM",
+                  68.56
+               ],
+               [ 
+                  "PULWAMA",
+                  75.41
+               ],
+               [ 
+                  "ANANTNAG",
+                  74.13
+               ],
+               [ 
+                  "LEH (LADAKH)",
+                  89.39
+               ],
+               [ 
+                  "KARGIL",
+                  86.73
+               ],
+               [ 
+                  "DODA",
+                  80.36
+               ],
+               [ 
+                  "UDHAMPUR",
+                  79.93
+               ],
+               [ 
+                  "PUNCH",
+                  81.04
+               ],
+               [ 
+                  "RAJAURI",
+                  78.38
+               ],
+               [ 
+                  "JAMMU",
+                  89.77
+               ],
+               [ 
+                  "KATHUA",
+                  81.4
+               ],
+               [ 
+                  "SHOPIAN",
+                  71.86
+               ],
+               [ 
+                  "BANDIPORA",
+                  68.41
+               ],
+               [ 
+                  "KISHTWAR",
+                  71.75
+               ],
+               [ 
+                  "RAMBAN",
+                  71.97
+               ],
+               [ 
+                  "GANDERBAL",
+                  70.74
+               ],
+               [ 
+                  "RAMBAN",
+                  70.58
+               ]
+            ]
+         },
+         { 
+            "name":"Uttar Pradesh",
+            "id":"Uttar Pradesh",
+            "data":[ 
+               [ 
+                  "SAHARANPUR",
+                  79.77
+               ],
+               [ 
+                  "MUZAFFARNAGAR",
+                  79.116
+               ],
+               [ 
+                  "BIJNOR",
+                  78.7
+               ],
+               [ 
+                  "MORADABAD",
+                  66.83
+               ],
+               [ 
+                  "RAMPUR",
+                  63.1
+               ],
+               [ 
+                  "JYOTIBA PHULE NAGAR",
+                  76.53
+               ],
+               [ 
+                  "MEERUT",
+                  82.91
+               ],
+               [ 
+                  "BAGHPAT",
+                  84.17
+               ],
+               [ 
+                  "GHAZIABAD",
+                  88.16
+               ],
+               [ 
+                  "GAUTAM BUDDHA NAGAR",
+                  90.23
+               ],
+               [ 
+                  "BULANDSHAHR",
+                  82.52
+               ],
+               [ 
+                  "ALIGARH",
+                  80.24
+               ],
+               [ 
+                  "HATHRAS",
+                  83.83
+               ],
+               [ 
+                  "MATHURA",
+                  84.39
+               ],
+               [ 
+                  "AGRA",
+                  78.32
+               ],
+               [ 
+                  "FIROZABAD",
+                  83.08
+               ],
+               [ 
+                  "ETAH",
+                  83.21
+               ],
+               [ 
+                  "MAINPURI",
+                  86.93
+               ],
+               [ 
+                  "BUDAUN",
+                  62.39
+               ],
+               [ 
+                  "BAREILLY",
+                  69.47
+               ],
+               [ 
+                  "PILIBHIT",
+                  73.46
+               ],
+               [ 
+                  "SHAHJAHANPUR",
+                  70.09
+               ],
+               [ 
+                  "KHERI",
+                  71.58
+               ],
+               [ 
+                  "SITAPUR",
+                  72.61
+               ],
+               [ 
+                  "HARDOI",
+                  77.2
+               ],
+               [ 
+                  "UNNAO",
+                  77.06
+               ],
+               [ 
+                  "LUCKNOW",
+                  84.27
+               ],
+               [ 
+                  "RAE BARELI",
+                  79.39
+               ],
+               [ 
+                  "FARRUKHABAD",
+                  79.34
+               ],
+               [ 
+                  "KANNAUJ",
+                  82.36
+               ],
+               [ 
+                  "ETAWAH",
+                  87.64
+               ] ]
+         },
+         { 
+            "name":"Kerala",
+            "id":"Kerala",
+            "data":[ 
+               [ 
+                  "v11.0",
+                  6.2
+               ],
+               [ 
+                  "v10.0",
+                  0.29
+               ],
+               [ 
+                  "v9.0",
+                  0.27
+               ],
+               [ 
+                  "v8.0",
+                  0.47
+               ]
+            ]
+         },
+         { 
+            "name":"Delhi",
+            "id":"Delhi",
+            "data":[ 
+               [ 
+                  "v11.0",
+                  3.39
+               ],
+               [ 
+                  "v10.1",
+                  0.96
+               ],
+               [ 
+                  "v10.0",
+                  0.36
+               ],
+               [ 
+                  "v9.1",
+                  0.54
+               ],
+               [ 
+                  "v9.0",
+                  0.13
+               ],
+               [ 
+                  "v5.1",
+                  0.2
+               ]
+            ]
+         },
+         { 
+            "name":"Maharashtra",
+            "id":"Maharashtra",
+            "data":[ 
+               [ 
+                  "v16",
+                  2.6
+               ],
+               [ 
+                  "v15",
+                  0.92
+               ],
+               [ 
+                  "v14",
+                  0.4
+               ],
+               [ 
+                  "v13",
+                  0.1
+               ]
+            ]
+         },
+         { 
+            "name":"Bihar",
+            "id":"Bihar",
+            "data":[ 
+               [ 
+                  "v50.0",
+                  0.96
+               ],
+               [ 
+                  "v49.0",
+                  0.82
+               ],
+               [ 
+                  "v12.1",
+                  0.14
+               ]
+            ]
+         }
+   ])
+ });
+
+/* GET users listing. */
+router.get('/literacyWomen', function(req, res, next) {    
+    res.setHeader('Access-Control-Allow-Origin', *);
+    res.json([ 
+   { 
+      "name":"Browsers",
+      "colorByPoint":true,
+      "data":[ 
+         { 
+            "name":"Jammu & Kashmir",
+            "y":58.01,
+            "drilldown":"Jammu & Kashmir"
+         },
+         { 
+            "name":"Uttar Pradesh",
+            "y":59.26,
+            "drilldown":"Uttar Pradesh"
+         },
+         { 
+            "name":"Kerala",
+            "y":91.98,
+            "drilldown":"Kerala"
+         },
+         { 
+            "name":"Delhi",
+            "y":80.93,
+            "drilldown":"Delhi"
+         },
+         { 
+            "name":"Maharashtra",
+            "y":75.48,
+            "drilldown":"Maharashtra"
+         },
+         { 
+            "name":"Bihar",
+            "y":53.33,
+            "drilldown":"Bihar"
+         }
+      ]
+   }
+])
+});
+
+/* GET users listing. */
+router.get('/literacyWomen2', function(req, res, next) {    
+    res.setHeader('Access-Control-Allow-Origin', *);
+    res.json([
+      {
+        "name": "Jammu & Kashmir",
+        "id": "Jammu & Kashmir",
+        "data": [
+          [
+            "KUPWARA",
+            77 
+          ],
+          [
+            "BARAMULA",
+            77.35 
+          ],
+          [
+            "SRINAGAR",
+            77.95 
+          ],
+          [
+            "BADGAM",
+            68.56 
+          ],
+          [
+            "PULWAMA",
+           75.41 
+          ],
+          [
+            "ANANTNAG",
+            74.13
+          ],
+          [
+            "LEH (LADAKH)",
+        
+            89.39
+          ],
+          [
+            "KARGIL",
+
+            86.73
+          ],
+          [
+            "DODA",
+            
+            80.36
+          ],
+          [
+            "UDHAMPUR",
+            
+            79.93
+          ],
+          [
+            "PUNCH",
+            
+            81.04
+          ],
+          [
+            "RAJAURI",
+            
+            78.38
+          ],
+          [
+            "JAMMU",
+           
+            89.77
+          ],
+          [
+            "KATHUA",
+            
+            81.4
+          ],
+          [
+            "SHOPIAN",
+            
+            71.86
+          ],
+          [
+            "BANDIPORA",
+            
+            68.41
+          ],
+          [
+            "KISHTWAR",
+            
+            71.75
+          ],
+          [
+            "RAMBAN",
+            
+            71.97
+          ],
+          [
+            "GANDERBAL",
+            
+            70.74
+          ],
+          [
+            "RAMBAN",
+            
+            70.58
+          ]
+        ]
+      },
+      {
+        "name": "Uttar Pradesh",
+        "id": "Uttar Pradesh",
+        "data": [
+          [
+            "SAHARANPUR",
+            
+            79.77
+          ],
+          [
+            "MUZAFFARNAGAR",
+            
+            79.116
+          ],
+          [
+            "BIJNOR",
+            
+            78.7
+          ],
+          [
+            "MORADABAD",
+            
+            66.83
+          ],
+          [
+            "RAMPUR",
+            
+            63.1
+          ],
+          [
+            "JYOTIBA PHULE NAGAR",
+            
+            76.53
+          ],
+          [
+            "MEERUT",
+            
+            82.91
+          ],
+          [
+            "BAGHPAT",
+            
+            84.17
+          ],
+          [
+            "GHAZIABAD",
+            
+            88.16
+          ],
+          [
+            "GAUTAM BUDDHA NAGAR",
+            
+            90.23
+          ],
+          [
+            "BULANDSHAHR",
+            
+            82.52
+          ],
+          [
+            "ALIGARH",
+            
+            80.24
+          ],
+          [
+            "HATHRAS",
+            
+            83.83
+          ],
+          [
+            "MATHURA",
+            
+            84.39
+          ],
+          [
+            "AGRA",
+            
+            78.32
+          ],
+          [
+            "FIROZABAD",
+            
+            83.08
+          ],
+          [
+            "ETAH",
+            
+            83.21
+          ],
+          [
+            "MAINPURI",
+            
+            86.93
+          ],
+          [
+            "BUDAUN",
+            
+            62.39
+          ],
+          [
+            "BAREILLY",
+            
+            69.47
+          ],
+          [
+            "PILIBHIT",
+            
+            73.46
+          ],
+          [
+            "SHAHJAHANPUR",
+            
+            70.09
+          ],
+          [
+            "KHERI",
+            
+            71.58
+          ],
+          [
+            "SITAPUR",
+            
+            72.61
+          ],
+          [
+            "HARDOI",
+            
+            77.2
+          ],
+          [
+            "UNNAO",
+            
+            77.06
+          ],
+          [
+            "LUCKNOW",
+            
+            84.27
+          ],
+          [
+            "RAE BARELI",
+            
+            79.39
+          ],
+          [
+            "FARRUKHABAD",
+            
+            79.34
+          ],
+          [
+            "KANNAUJ",
+            
+            82.36
+          ],
+          [
+            "ETAWAH",
+            
+            87.64
+          ]
+        ]
+      },
+      {
+        "name": "Kerala",
+        "id": "Kerala",
+        "data": [
+          [
+            "v11.0",
+            6.2
+          ],
+          [
+            "v10.0",
+            0.29
+          ],
+          [
+            "v9.0",
+            0.27
+          ],
+          [
+            "v8.0",
+            0.47
+          ]
+        ]
+      },
+      {
+        "name": "Delhi",
+        "id": "Delhi",
+        "data": [
+          [
+            "v11.0",
+            3.39
+          ],
+          [
+            "v10.1",
+            0.96
+          ],
+          [
+            "v10.0",
+            0.36
+          ],
+          [
+            "v9.1",
+            0.54
+          ],
+          [
+            "v9.0",
+            0.13
+          ],
+          [
+            "v5.1",
+            0.2
+          ]
+        ]
+      },
+      {
+        "name": "Maharashtra",
+        "id": "Maharashtra",
+        "data": [
+          [
+            "v16",
+            2.6
+          ],
+          [
+            "v15",
+            0.92
+          ],
+          [
+            "v14",
+            0.4
+          ],
+          [
+            "v13",
+            0.1
+          ]
+        ]
+      },
+      {
+        "name": "Bihar",
+        "id": "Bihar",
+        "data": [
+          [
+            "v50.0",
+            0.96
+          ],
+          [
+            "v49.0",
+            0.82
+          ],
+          [
+            "v12.1",
+            0.14
+          ]
+        ]
+      }
+    ])
 });
 
 module.exports = router;
