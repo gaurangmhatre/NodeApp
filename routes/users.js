@@ -488,104 +488,90 @@ router.get('/literacyWomen', function(req, res, next) {
 /* GET users listing. */
 router.get('/literacyWomen2', function(req, res, next) {    
     res.setHeader('Access-Control-Allow-Origin', *);
-    res.json([
+    res.json( [
       {
         "name": "Jammu & Kashmir",
         "id": "Jammu & Kashmir",
         "data": [
           [
             "KUPWARA",
-            77 
+              54
           ],
           [
             "BARAMULA",
-            77.35 
+            55.01
           ],
           [
             "SRINAGAR",
-            77.95 
+            63.47
           ],
           [
             "BADGAM",
-            68.56 
+            46.6
           ],
           [
             "PULWAMA",
-           75.41 
+           53.81
           ],
           [
             "ANANTNAG",
-            74.13
+            54.13
           ],
           [
             "LEH (LADAKH)",
-        
-            89.39
+            79.39
           ],
           [
             "KARGIL",
-
-            86.73
+            75.73
           ],
           [
             "DODA",
-            
-            80.36
+            65.6
           ],
           [
             "UDHAMPUR",
-            
-            79.93
+            65.93
           ],
           [
             "PUNCH",
-            
-            81.04
+            62.04
           ],
           [
             "RAJAURI",
-            
-            78.38
+            65.38
           ],
           [
             "JAMMU",
-           
-            89.77
+            78.77
           ],
           [
             "KATHUA",
-            
-            81.4
+            72.4
           ],
           [
             "SHOPIAN",
-            
-            71.86
+            61.86
           ],
           [
             "BANDIPORA",
-            
-            68.41
+            66.41
           ],
           [
             "KISHTWAR",
-            
-            71.75
+            59.75
           ],
           [
             "RAMBAN",
-            
-            71.97
+            65.97
           ],
           [
             "GANDERBAL",
-            
-            70.74
+            63.74
           ],
           [
             "RAMBAN",
-            
-            70.58
+            67.58
           ]
         ]
       },
@@ -595,158 +581,127 @@ router.get('/literacyWomen2', function(req, res, next) {
         "data": [
           [
             "SAHARANPUR",
-            
-            79.77
+            69.77
           ],
           [
             "MUZAFFARNAGAR",
-            
-            79.116
+            67.116
           ],
           [
             "BIJNOR",
-            
-            78.7
+            71.7
           ],
           [
             "MORADABAD",
-            
-            66.83
+            55.83
           ],
           [
             "RAMPUR",
-            
-            63.1
+            59.1
           ],
           [
             "JYOTIBA PHULE NAGAR",
-            
-            76.53
+            69.53
           ],
           [
             "MEERUT",
-            
-            82.91
+            76.91
           ],
           [
             "BAGHPAT",
-            
-            84.17
+            80.17
           ],
           [
             "GHAZIABAD",
-            
-            88.16
+            85.16
           ],
           [
             "GAUTAM BUDDHA NAGAR",
-            
-            90.23
+            68.23
           ],
           [
             "BULANDSHAHR",
-            
-            82.52
+            78.52
           ],
           [
             "ALIGARH",
-            
-            80.24
+            75.24
           ],
           [
             "HATHRAS",
-            
-            83.83
+            80.83
           ],
           [
             "MATHURA",
-            
-            84.39
+            78.39
           ],
           [
             "AGRA",
-            
-            78.32
+            69.32
           ],
           [
             "FIROZABAD",
-            
-            83.08
+            77.08
           ],
           [
             "ETAH",
-            
-            83.21
+            78.21
           ],
           [
             "MAINPURI",
-            
-            86.93
+            80.93
           ],
           [
             "BUDAUN",
-            
-            62.39
+            58.39
           ],
           [
             "BAREILLY",
-            
-            69.47
+            79.47
           ],
           [
             "PILIBHIT",
-            
-            73.46
+            68.46
           ],
           [
             "SHAHJAHANPUR",
-            
-            70.09
+            65.09
           ],
           [
             "KHERI",
-            
-            71.58
+            68.58
           ],
           [
             "SITAPUR",
-            
-            72.61
+            69.61
           ],
           [
             "HARDOI",
-            
-            77.2
+            69.2
           ],
           [
             "UNNAO",
-            
-            77.06
+            70.06
           ],
           [
-            "LUCKNOW",
-            
-            84.27
+            "LUCKNOW",	
+            79.27
           ],
           [
             "RAE BARELI",
-            
-            79.39
+            70.39
           ],
           [
             "FARRUKHABAD",
-            
-            79.34
+            75.34
           ],
           [
             "KANNAUJ",
-            
-            82.36
+            78.36
           ],
           [
             "ETAWAH",
-            
-            87.64
+            83.64
           ]
         ]
       },
@@ -842,7 +797,8 @@ router.get('/literacyWomen2', function(req, res, next) {
           ]
         ]
       }
-    ])
+    ]
+)
 });
 
 module.exports = router;
